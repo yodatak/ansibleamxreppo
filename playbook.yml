@@ -1,0 +1,7 @@
+---
+- hosts: Serveurs
+  tasks:
+    - service:
+        name: monit
+        state: started
+      become: yes
