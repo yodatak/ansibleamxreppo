@@ -1,0 +1,7 @@
+---
+- hosts: Serveurs
+  tasks:
+    - service:
+        name: docker
+        state: started
+      become: yes
